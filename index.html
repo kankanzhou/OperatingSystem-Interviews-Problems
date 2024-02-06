@@ -6,7 +6,27 @@
     <title>Document</title>
 </head>
 <body>
+  <div>
     <p>1.What is an operating system, and what are its main functions?</p>
-    <p> An operating system is a software that manages computer hardware and provides services for applications to run efficiently. Its main functions include process management, memory management, file system management, device management, and user interface.</p>
+    <p>An operating system is a software that manages computer hardware and provides services for applications to run efficiently.</p>
+    <p>The kernel of an operating system is its core component, responsible for memory management, hardware device management, file system management, and application management.</p>
+    <img src="./Image/1.jpg">
+  </div>
+  <div>
+    <p>2.What is System Call?</p>
+    <p>Based on how processes access resources, we can divide the operation of processes on the system into two levels:</p>
+    <p>User mode: Processes running in user mode can directly access data from user programs.</p>
+    <p>Kernel mode: Processes or programs running in kernel mode can access almost any resource on the computer without restrictions.</p>
+    <p>Most of the programs we run operate in user mode. But what if we need to access the system-level subfunctions provided by the operating system? That's where system calls come in!</p>
+    <p>In other words, in the user programs we run, any operation related to system-level resources (such as file management, process control, memory management, etc.) must be requested through system calls to the operating system, which then handles them on behalf of the program.</p>
+    <p>These system calls can be broadly categorized by their functionalities:</p>
+    <ol>
+        <li>Device management: Handling requests or releases of devices, as well as device startups.</li>
+        <li>File management: Performing functions such as reading, writing, creating, and deleting files.</li>
+        <li>Process control: Creating, terminating, blocking, and waking up processes.</li>
+        <li>Interprocess communication: Facilitating message passing or signal transmission between processes.</li>
+        <li>Memory management: Allocating, deallocating memory, and obtaining the size and address of occupied memory areas.</li>
+    </ol>
+  </div>
 </body>
 </html>
